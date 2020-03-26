@@ -1,0 +1,132 @@
+body{
+
+    background: rgba(79,103,109,1);
+    background: -moz-linear-gradient(left, rgba(79,103,109,1) 0%, rgba(95,126,134,1) 99%, rgba(105,141,150,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(79,103,109,1)), color-stop(99%, rgba(95,126,134,1)), color-stop(100%, rgba(105,141,150,1)));
+    background: -webkit-linear-gradient(left, rgba(79,103,109,1) 0%, rgba(95,126,134,1) 99%, rgba(105,141,150,1) 100%);
+    background: -o-linear-gradient(left, rgba(79,103,109,1) 0%, rgba(95,126,134,1) 99%, rgba(105,141,150,1) 100%);
+    background: -ms-linear-gradient(left, rgba(79,103,109,1) 0%, rgba(95,126,134,1) 99%, rgba(105,141,150,1) 100%);
+    background: linear-gradient(to right, rgba(79,103,109,1) 0%, rgba(95,126,134,1) 99%, rgba(105,141,150,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f676d', endColorstr='#698d96', GradientType=1 );
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.userCardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    background-color: white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 50px 0;
+    min-width: 320px;
+    max-width: 360px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 0 64px 17px rgba(34,204,122,1);
+}
+
+.userInfoContainer{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 30px 20px;
+}
+#he1{
+    filter: grayscale(0.7); -webkit-filter: grayscale(0.7);
+}
+#he2, #he2_1{
+    filter: blur(2px); -webkit-filter: blur(2px);
+}
+#he3, #he3_1{
+    filter: brightness(2); -webkit-filter: brightness(2);
+}
+#he4, #he4_1{
+    filter: contrast(2); -webkit-filter: contrast(2);
+}
+#he5, #he5_1{
+    filter: saturate(300%); -webkit-filter: saturate(300%);
+}
+#he6{
+    filter: opacity(50%); -webkit-filter: opacity(50%);
+}
+#he7, #he7_1{
+    filter: invert(30%); -webkit-filter: invert(30%)
+}
+#he8, #he8_1{
+    filter: sepia(0.5); -webkit-filter: sepia(0.5);
+}
+#he9, #he9_1{
+    filter:grayscale(0.5); -webkit-filter: grayscale(0.5);
+}
+#he10{
+    filter: hue-rotate(207deg); -webkit-filter: hue-rotate(270deg);
+}
+.userCardContainer > header{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/56c0ae80ab48de4417bd17fa/1456686084465-WRWE4AJNPM6W2AVY8RCG/ke17ZwdGBToddI8pDm48kG4cTxyrtjBx3gz6My-yu_R7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5c-DHCuSiEoyZklSMy4qqyyIXyCJKYOijvdjGRH_tBQTA/image-asset.jpeg?format=750w");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    z-index: 100;
+}
+
+.userImageContainer{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    margin-top: -125px;
+    z-index: 101;
+}
+.userInfoContainer > footer {
+    margin-top: 20px;
+}
+.userInfoContainer > h2{
+    font-size: 28px;
+    text-align: center;
+    padding-top: 20px;
+    letter-spacing: 5px;
+}
+.userInfoContainer > h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    color: #808080;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+.userInfoContainer > h5{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #808080;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+.contact {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+}
+.contact + .contact{
+    margin-left: 10px;
+}
